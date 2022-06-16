@@ -26,6 +26,11 @@
   margin-right: 0;
 }
 
+/*Color of regular price in PDP*/
+.product .price__regular {
+  color: red;
+}
+
 .price:not(.price--show-badge) .price-item--last:last-of-type {
   margin: 0;
 }
