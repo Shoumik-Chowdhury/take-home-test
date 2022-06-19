@@ -240,6 +240,11 @@
                 {{ product.description }}
               </div>
             {%- endif -%}
+          {%- if product.metafields.custom.product_extra_info != blank -%}
+              <div class="product__extra_info">
+                {{product.metafields.custom.product_extra_info}}
+              </div>
+          {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
