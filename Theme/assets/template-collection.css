@@ -79,7 +79,7 @@
   margin-top: 1rem;
 }
 
-.collection ul li:first-child {
+#ProductGridContainer .collection ul li:first-child {
   border-style: solid;
   border-width: 10px;
   border-color: red;
