@@ -12,6 +12,8 @@
           <textarea class="text-area field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
+      
+      <a href="/cart/clear" type="button" class="cart__clear-button button">Clear Cart</a>
 
       <div class="cart__blocks">
         {% for block in section.blocks %}
@@ -62,6 +64,7 @@
                 <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                   {{ 'sections.cart.checkout' | t }}
                 </button>
+
               </div>
 
               {%- if additional_checkout_buttons -%}
